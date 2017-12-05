@@ -15,6 +15,10 @@
 
 `scp -r {{remote_host}}:{{path/to/remote_dir}} {{path/to/local_dir}}`
 
+- Recursively copy multiple directories from a remote host to a local directory:
+
+`scp -r {{remote_host}}:{{path/to/remote_parent_dir/}}{{\{folder1,folder2\}}} {{path/to/local_dir}}`
+
 - Copy a file between two remote hosts transferring through the local host:
 
 `scp -3 {{host1}}:{{path/to/remote_file}} {{host2}}:{{path/to/remote_dir}}`
